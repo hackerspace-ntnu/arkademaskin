@@ -1,0 +1,9 @@
+* Spesifikasjon for interface med ekstern hardware
+
+** Fysiske dimensjoner og anbefalt bygging
+
+** Definisjon av pinner
+
+** All komunikasjon, kablet og trådløst
+
+** Gjennkjenning av hardware
