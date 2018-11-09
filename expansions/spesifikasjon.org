@@ -2,8 +2,41 @@
 
 ** Fysiske dimensjoner og anbefalt bygging
 
+*** Bygging
+- En 2t4 på høykant på hver side
+- Dekket med 6mm kryssfiner over hele, trekk dekket helt til endes
+- 40cm bred 6mm tykk kryssfinerplane i midten for kontakter, 5cm inn fra tuppen må lages
+- Forsterk med 2t4 på høykant på tvers kort bak disse 5cm
+- Kontaktene er på hver side av platen, 20 på hver side. De har 0.5cm margin til kantene, er 1cm brede og har 1cm mellom hverandre
+- På oversiden fra høyre sett fra spilleren av arkaden slås de første 9 pinnene sammen til fra hjørnet:
+  + 3cm 24V
+  + 3cm 12V
+  + 3cm 5v
+  + 5cm GND
+- På toppen av boksen innerst over hele bredden males 5cm dyp 10 sort/hvit bitt jevnt fordelt, altså ca 5cm bred.
+
+- Total bredde :: 51,36cm
+
+
 ** Definisjon av pinner
+- Toppen fra høyre sett ovenfra fra maskinen
+  + 2 sammenslått 24V
+  + 2 sammenslått 12V
+  + 2 sammenslått 5V
+  + 3 sammenslått GND
+  + Seriell RX
+  + Seriell TX
+  + USB data+
+  + USB data-
+  + i2c SDA
+  + i2c SCL
+  + 5 unused
+- Bunnen: 20 GPIO
 
 ** All komunikasjon, kablet og trådløst
+- Pinner som definert over
+- 10b sort/hvit malt på toppen av boksen, hvit: 1 sort: 0
+- Bluetooth-muligheter
 
 ** Gjennkjenning av hardware
+- 10 bitt malt i sort: 0 eller hvit: 1 fremst på toppen av boksen, 5cm dype og jevnt fordelt.
