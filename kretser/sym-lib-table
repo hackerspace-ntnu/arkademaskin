@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name capacitive-touch-demo-rescue)(type Legacy)(uri ${KIPRJMOD}/capacitive-touch-demo-rescue.lib)(options "")(descr ""))
+)
