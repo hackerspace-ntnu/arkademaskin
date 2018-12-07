@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name capacitive-touch-demo-rescue)(type Legacy)(uri ${KIPRJMOD}/capacitive-touch-demo-rescue.lib)(options "")(descr ""))
+  (lib (name capacitive-touch-parts)(type Legacy)(uri /home/tnh/Sync/Hackerspace/Arkade/arcade-piano/kretser/capacitive-touch-parts.lib)(options "")(descr ""))
+)

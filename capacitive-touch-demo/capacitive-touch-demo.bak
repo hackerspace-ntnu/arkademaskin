@@ -1,0 +1,566 @@
+EESchema Schematic File Version 4
+LIBS:capacitive-touch-demo-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Capacitive touch-thing for arcade"
+Date "2018-12-07"
+Rev "v01"
+Comp "Hackerspace NTNU"
+Comment1 ""
+Comment2 "https://opensource.org/licenses/MIT"
+Comment3 "MIT licence applies"
+Comment4 "Meant to build a small menu-navigator"
+$EndDescr
+Wire Wire Line
+	3100 1800 3100 1950
+Wire Wire Line
+	3100 1950 3350 1950
+$Comp
+L power:GND #PWR04
+U 1 1 5BF82C46
+P 3100 4450
+F 0 "#PWR04" H 3100 4200 50  0001 C CNN
+F 1 "GND" H 3105 4277 50  0000 C CNN
+F 2 "" H 3100 4450 50  0001 C CNN
+F 3 "" H 3100 4450 50  0001 C CNN
+	1    3100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4450 3100 4250
+Wire Wire Line
+	3100 4250 3350 4250
+Wire Wire Line
+	6500 2450 6050 2450
+Wire Wire Line
+	6050 2450 6050 2550
+Wire Wire Line
+	6500 2750 6050 2750
+Wire Wire Line
+	6050 2750 6050 2650
+$Comp
+L Device:Jumper Reset1
+U 1 1 5BF82EBF
+P 6250 3400
+F 0 "Reset1" H 6250 3664 50  0000 C CNN
+F 1 "Jumper" H 6250 3573 50  0000 C CNN
+F 2 "" H 6250 3400 50  0001 C CNN
+F 3 "~" H 6250 3400 50  0001 C CNN
+	1    6250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5C0A90F4
+P 6500 2600
+F 0 "Y1" V 6454 2731 50  0000 L CNN
+F 1 "16MHz" V 6545 2731 50  0000 L CNN
+F 2 "" H 6500 2600 50  0001 C CNN
+F 3 "~" H 6500 2600 50  0001 C CNN
+	1    6500 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5C0A929C
+P 3100 1800
+F 0 "#PWR03" H 3100 1650 50  0001 C CNN
+F 1 "VCC" H 3117 1973 50  0000 C CNN
+F 2 "" H 3100 1800 50  0001 C CNN
+F 3 "" H 3100 1800 50  0001 C CNN
+	1    3100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5C0A94F7
+P 6700 3400
+F 0 "#PWR08" H 6700 3150 50  0001 C CNN
+F 1 "GND" H 6705 3227 50  0000 C CNN
+F 2 "" H 6700 3400 50  0001 C CNN
+F 3 "" H 6700 3400 50  0001 C CNN
+	1    6700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3400 6600 3400
+$Comp
+L Device:C C3
+U 1 1 5C0A9669
+P 6600 2900
+F 0 "C3" H 6715 2946 50  0000 L CNN
+F 1 "20pF" H 6715 2855 50  0000 L CNN
+F 2 "" H 6638 2750 50  0001 C CNN
+F 3 "~" H 6600 2900 50  0001 C CNN
+	1    6600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5C0A96C5
+P 7000 2900
+F 0 "C4" H 7115 2946 50  0000 L CNN
+F 1 "20pF" H 7115 2855 50  0000 L CNN
+F 2 "" H 7038 2750 50  0001 C CNN
+F 3 "~" H 7000 2900 50  0001 C CNN
+	1    7000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3050 6600 3050
+Wire Wire Line
+	6600 3050 6600 3400
+Connection ~ 6600 3050
+Connection ~ 6600 3400
+Wire Wire Line
+	6600 3400 6700 3400
+Wire Wire Line
+	6600 2750 6500 2750
+Connection ~ 6500 2750
+Wire Wire Line
+	6500 2450 7000 2450
+Wire Wire Line
+	7000 2450 7000 2750
+Connection ~ 6500 2450
+$Comp
+L Device:R R3
+U 1 1 5C0A9BD6
+P 6250 3700
+F 0 "R3" V 6043 3700 50  0000 C CNN
+F 1 "10k" V 6134 3700 50  0000 C CNN
+F 2 "" V 6180 3700 50  0001 C CNN
+F 3 "~" H 6250 3700 50  0001 C CNN
+	1    6250 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3700 5950 3400
+Wire Wire Line
+	5950 3700 6100 3700
+Connection ~ 5950 3400
+$Comp
+L power:VCC #PWR07
+U 1 1 5C0A9EC0
+P 6450 3700
+F 0 "#PWR07" H 6450 3550 50  0001 C CNN
+F 1 "VCC" V 6467 3828 50  0000 L CNN
+F 2 "" H 6450 3700 50  0001 C CNN
+F 3 "" H 6450 3700 50  0001 C CNN
+	1    6450 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 3700 6400 3700
+$Comp
+L Device:R R1
+U 1 1 5C0AA414
+P 5800 4000
+F 0 "R1" H 5870 4046 50  0000 L CNN
+F 1 "1M" H 5870 3955 50  0000 L CNN
+F 2 "" V 5730 4000 50  0001 C CNN
+F 3 "~" H 5800 4000 50  0001 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C0AA4A4
+P 6100 4150
+F 0 "C1" V 6352 4150 50  0000 C CNN
+F 1 "100pF" V 6261 4150 50  0000 C CNN
+F 2 "" H 6138 4000 50  0001 C CNN
+F 3 "~" H 6100 4150 50  0001 C CNN
+	1    6100 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5C0AA5B0
+P 6350 4150
+F 0 "#PWR05" H 6350 3900 50  0001 C CNN
+F 1 "GND" H 6355 3977 50  0000 C CNN
+F 2 "" H 6350 4150 50  0001 C CNN
+F 3 "" H 6350 4150 50  0001 C CNN
+	1    6350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4150 6250 4150
+Wire Wire Line
+	5950 4150 5800 4150
+$Comp
+L capacitive-touch-parts:sensor-pad G1
+U 1 1 5C0AAB0E
+P 6000 4400
+F 0 "G1" H 6128 4446 50  0000 L CNN
+F 1 "Upp" H 6128 4355 50  0000 L CNN
+F 2 "" H 6000 4400 50  0001 C CNN
+F 3 "" H 6000 4400 50  0001 C CNN
+	1    6000 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4400 5800 4150
+Connection ~ 5800 4150
+$Comp
+L Device:R R2
+U 1 1 5C0AB949
+P 5800 4750
+F 0 "R2" H 5870 4796 50  0000 L CNN
+F 1 "1M" H 5870 4705 50  0000 L CNN
+F 2 "" V 5730 4750 50  0001 C CNN
+F 3 "~" H 5800 4750 50  0001 C CNN
+	1    5800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C0AB950
+P 6100 4900
+F 0 "C2" V 6352 4900 50  0000 C CNN
+F 1 "100pF" V 6261 4900 50  0000 C CNN
+F 2 "" H 6138 4750 50  0001 C CNN
+F 3 "~" H 6100 4900 50  0001 C CNN
+	1    6100 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5C0AB957
+P 6350 4900
+F 0 "#PWR06" H 6350 4650 50  0001 C CNN
+F 1 "GND" H 6355 4727 50  0000 C CNN
+F 2 "" H 6350 4900 50  0001 C CNN
+F 3 "" H 6350 4900 50  0001 C CNN
+	1    6350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4900 6250 4900
+Wire Wire Line
+	5950 4900 5800 4900
+$Comp
+L capacitive-touch-parts:sensor-pad G2
+U 1 1 5C0AB95F
+P 6000 5150
+F 0 "G2" H 6128 5196 50  0000 L CNN
+F 1 "Down" H 6128 5105 50  0000 L CNN
+F 2 "" H 6000 5150 50  0001 C CNN
+F 3 "" H 6000 5150 50  0001 C CNN
+	1    6000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5150 5800 4900
+Connection ~ 5800 4900
+Wire Wire Line
+	5250 2650 6050 2650
+Wire Wire Line
+	5800 3850 5800 3750
+Wire Wire Line
+	5800 4150 5700 4150
+Wire Wire Line
+	5700 4150 5700 3850
+Wire Wire Line
+	5800 4600 5600 4600
+Wire Wire Line
+	5600 4600 5600 4050
+Wire Wire Line
+	5800 4900 5550 4900
+Wire Wire Line
+	5550 4900 5550 4150
+Wire Wire Line
+	5550 4150 5250 4150
+$Comp
+L Device:R R5
+U 1 1 5C0B0CC4
+P 7650 2750
+F 0 "R5" H 7720 2796 50  0000 L CNN
+F 1 "1M" H 7720 2705 50  0000 L CNN
+F 2 "" V 7580 2750 50  0001 C CNN
+F 3 "~" H 7650 2750 50  0001 C CNN
+	1    7650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5C0B0CCB
+P 7950 2900
+F 0 "C6" V 8202 2900 50  0000 C CNN
+F 1 "100pF" V 8111 2900 50  0000 C CNN
+F 2 "" H 7988 2750 50  0001 C CNN
+F 3 "~" H 7950 2900 50  0001 C CNN
+	1    7950 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5C0B0CD2
+P 8200 2900
+F 0 "#PWR010" H 8200 2650 50  0001 C CNN
+F 1 "GND" H 8205 2727 50  0000 C CNN
+F 2 "" H 8200 2900 50  0001 C CNN
+F 3 "" H 8200 2900 50  0001 C CNN
+	1    8200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2900 8100 2900
+Wire Wire Line
+	7800 2900 7650 2900
+$Comp
+L capacitive-touch-parts:sensor-pad G4
+U 1 1 5C0B0CDA
+P 7850 3150
+F 0 "G4" H 7978 3196 50  0000 L CNN
+F 1 "Select" H 7978 3105 50  0000 L CNN
+F 2 "" H 7850 3150 50  0001 C CNN
+F 3 "" H 7850 3150 50  0001 C CNN
+	1    7850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3150 7650 2900
+Connection ~ 7650 2900
+Wire Wire Line
+	7650 2600 7450 2600
+Wire Wire Line
+	7450 2600 7450 2050
+Wire Wire Line
+	7650 2900 7400 2900
+Wire Wire Line
+	7400 2900 7400 2150
+$Comp
+L Device:R R4
+U 1 1 5C0B1679
+P 7550 4600
+F 0 "R4" H 7620 4646 50  0000 L CNN
+F 1 "1M" H 7620 4555 50  0000 L CNN
+F 2 "" V 7480 4600 50  0001 C CNN
+F 3 "~" H 7550 4600 50  0001 C CNN
+	1    7550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5C0B1680
+P 7850 4750
+F 0 "C5" V 8102 4750 50  0000 C CNN
+F 1 "100pF" V 8011 4750 50  0000 C CNN
+F 2 "" H 7888 4600 50  0001 C CNN
+F 3 "~" H 7850 4750 50  0001 C CNN
+	1    7850 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C0B1687
+P 8100 4750
+F 0 "#PWR09" H 8100 4500 50  0001 C CNN
+F 1 "GND" H 8105 4577 50  0000 C CNN
+F 2 "" H 8100 4750 50  0001 C CNN
+F 3 "" H 8100 4750 50  0001 C CNN
+	1    8100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4750 8000 4750
+Wire Wire Line
+	7700 4750 7550 4750
+$Comp
+L capacitive-touch-parts:sensor-pad G3
+U 1 1 5C0B168F
+P 7750 5000
+F 0 "G3" H 7878 5046 50  0000 L CNN
+F 1 "Back" H 7878 4955 50  0000 L CNN
+F 2 "" H 7750 5000 50  0001 C CNN
+F 3 "" H 7750 5000 50  0001 C CNN
+	1    7750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5000 7550 4750
+Connection ~ 7550 4750
+Wire Wire Line
+	7550 4450 7350 4450
+Wire Wire Line
+	7550 4750 7300 4750
+Wire Wire Line
+	7300 4750 7300 5300
+Wire Wire Line
+	7350 1950 7350 4450
+Wire Wire Line
+	7400 2150 5250 2150
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5C0CA658
+P 1950 2150
+F 0 "J1" H 2056 2528 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 2056 2437 50  0000 C CNN
+F 2 "" H 1950 2150 50  0001 C CNN
+F 3 "~" H 1950 2150 50  0001 C CNN
+	1    1950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5C0CA82F
+P 2500 1950
+F 0 "#PWR01" H 2500 1800 50  0001 C CNN
+F 1 "VCC" H 2517 2123 50  0000 C CNN
+F 2 "" H 2500 1950 50  0001 C CNN
+F 3 "" H 2500 1950 50  0001 C CNN
+	1    2500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C0CA8C9
+P 2500 2050
+F 0 "#PWR02" H 2500 1800 50  0001 C CNN
+F 1 "GND" V 2505 1922 50  0000 R CNN
+F 2 "" H 2500 2050 50  0001 C CNN
+F 3 "" H 2500 2050 50  0001 C CNN
+	1    2500 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 1950 2500 1950
+Wire Wire Line
+	2500 2050 2150 2050
+Wire Wire Line
+	5400 3550 5400 1500
+Wire Wire Line
+	5400 1500 2800 1500
+Wire Wire Line
+	2800 1500 2800 2150
+Wire Wire Line
+	2800 2150 2150 2150
+Wire Wire Line
+	5450 3650 5450 1450
+Wire Wire Line
+	5450 1450 2850 1450
+Wire Wire Line
+	2850 1450 2850 2250
+Wire Wire Line
+	2850 2250 2150 2250
+Wire Wire Line
+	5500 3400 5500 1400
+Wire Wire Line
+	5500 1400 2900 1400
+Wire Wire Line
+	2900 1400 2900 2350
+Wire Wire Line
+	2900 2350 2150 2350
+Connection ~ 5500 3400
+Wire Wire Line
+	5500 3400 5950 3400
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U1
+U 1 1 5C0D6589
+P 4300 3350
+F 0 "U1" H 3659 3396 50  0000 R CNN
+F 1 "ATmega328P-PU" H 3659 3305 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 4300 3350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1950 3350 1700
+Wire Wire Line
+	3350 1700 4300 1700
+Wire Wire Line
+	4300 1700 4300 1850
+Wire Wire Line
+	3350 4250 3350 4850
+Wire Wire Line
+	3350 4850 4300 4850
+Wire Wire Line
+	5250 2650 5250 2850
+Wire Wire Line
+	5250 2850 4900 2850
+Wire Wire Line
+	5150 2550 5150 2750
+Wire Wire Line
+	5150 2750 4900 2750
+Wire Wire Line
+	5150 2550 6050 2550
+Wire Wire Line
+	5100 3400 5100 3650
+Wire Wire Line
+	5100 3650 4900 3650
+Wire Wire Line
+	5100 3400 5500 3400
+Wire Wire Line
+	5000 3550 5000 3850
+Wire Wire Line
+	5000 3850 4900 3850
+Wire Wire Line
+	5000 3550 5400 3550
+Wire Wire Line
+	5150 3650 5150 3700
+Wire Wire Line
+	5150 3700 5050 3700
+Wire Wire Line
+	5050 3700 5050 3950
+Wire Wire Line
+	5050 3950 4900 3950
+Wire Wire Line
+	5150 3650 5450 3650
+Wire Wire Line
+	5100 3750 5100 4050
+Wire Wire Line
+	5100 4050 4900 4050
+Wire Wire Line
+	5100 3750 5800 3750
+Wire Wire Line
+	5150 3850 5150 4150
+Wire Wire Line
+	5150 4150 4900 4150
+Wire Wire Line
+	5150 3850 5700 3850
+Wire Wire Line
+	5200 4050 5200 4350
+Wire Wire Line
+	5200 4350 4900 4350
+Wire Wire Line
+	5200 4050 5600 4050
+Wire Wire Line
+	5250 4150 5250 4450
+Wire Wire Line
+	5250 4450 4900 4450
+Wire Wire Line
+	4900 4550 4900 5300
+Wire Wire Line
+	4900 5300 7300 5300
+Wire Wire Line
+	4900 1950 4900 2150
+Wire Wire Line
+	4900 1950 7350 1950
+Wire Wire Line
+	5000 2050 5000 2250
+Wire Wire Line
+	5000 2250 4900 2250
+Wire Wire Line
+	5000 2050 7450 2050
+Wire Wire Line
+	4900 2350 5250 2350
+Wire Wire Line
+	5250 2350 5250 2150
+NoConn ~ 3700 2150
+NoConn ~ 4900 2450
+NoConn ~ 4900 2550
+NoConn ~ 4900 2650
+NoConn ~ 4900 3050
+NoConn ~ 4900 3150
+NoConn ~ 4900 3250
+NoConn ~ 4900 3350
+NoConn ~ 4900 3450
+NoConn ~ 4900 3550
+NoConn ~ 4900 4250
+NoConn ~ 4400 1850
+$EndSCHEMATC

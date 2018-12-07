@@ -1,0 +1,17 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# sensor-pad
+#
+DEF sensor-pad G 0 40 Y Y 1 F N
+F0 "G" -50 150 50 H V C CNN
+F1 "sensor-pad" 150 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 100 100 -100 0 1 0 N
+X Out 1 -200 0 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
