@@ -1,0 +1,41 @@
+digraph G{
+	node[shape="box", style="rounded"]
+	start;
+	Spill;
+	Retro;
+
+	node[shape="box", style=""]
+	Hvilken;
+	GPIO;
+	FStandard;
+	FEgen;
+	MerKonfig;
+
+	node[shape="diamond", style="", margin="0.05,0.1"]
+	FilP;
+	KodeP;
+
+
+	start[label="Sett inn ny expansion"];
+	Spill[label="Gjør spill tilgjengelig som gitt i konfig"];
+	Retro[label="Gjør retropie tilgjengelig med savestate for bruker,\nuavhengig av expansion"];
+
+	Hvilken[label="Finn ut hvilken det er"];
+	GPIO[label="Flash vanlig tastatur til arudno på GPIO"];
+	FStandard[label="Flash standardkode"];
+	FEgen[label="Flash opp egen kode"];
+	MerKonfig[label="Sett opp resten av konfig-filen.\nEventuell egen io for expansion"];
+
+	FilP[label="Har den konfig-fil?"];
+	KodeP[label="Har konfigen egen\narduino-kode?"];
+
+
+	start -> Hvilken -> FilP;
+	FilP -> GPIO[label="Nei"];
+	GPIO -> Retro;
+	FilP -> KodeP[label="Ja"];
+	KodeP -> FStandard[label="Nei"];
+	FStandard -> MerKonfig -> Spill;
+	KodeP -> FEgen[label="Ja"];
+	FEgen -> MerKonfig;
+}
