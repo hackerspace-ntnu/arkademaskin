@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name pads-cap-lib)(type KiCad)(uri ${KIPRJMOD}/pads-cap-lib.pretty)(options "")(descr ""))
+  (lib (name capacitive-touch-demo)(type KiCad)(uri /home/tnh/Sync/Hackerspace/Arkade/arcade-piano/capacitive-touch-demo)(options "")(descr ""))
+)

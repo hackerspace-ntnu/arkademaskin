@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name capacitive-touch-parts)(type Legacy)(uri ${KIPRJMOD}/capacitive-touch-parts.lib)(options "")(descr ""))
-)
