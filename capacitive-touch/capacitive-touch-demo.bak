@@ -58,17 +58,6 @@ F 3 "~" H 1950 2150 50  0001 C CNN
 	1    1950 2150
 	1    0    0    -1  
 $EndComp
-$Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
-U 1 1 5C0D6589
-P 4800 2550
-F 0 "U1" H 4159 2596 50  0000 R CNN
-F 1 "ATmega328P-PU" H 4159 2505 50  0000 R CNN
-F 2 "Package_DIP:DIP-28_W7.62mm_LongPads" H 4800 2550 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 4800 2550 50  0001 C CNN
-	1    4800 2550
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4900 1050
 $Comp
 L Device:R R2
@@ -252,17 +241,6 @@ Wire Wire Line
 	5650 2650 5400 2650
 Wire Wire Line
 	5400 2750 5650 2750
-$Comp
-L capacitive-pad:capacitive-pad C4
-U 1 1 5C6F29A5
-P 7450 1600
-F 0 "C4" H 7677 1646 50  0000 L CNN
-F 1 "capacitive-pad" H 7677 1555 50  0000 L CNN
-F 2 "pads-cap-lib:capacitive-pad" H 7450 1600 50  0001 C CNN
-F 3 "" H 7450 1600 50  0001 C CNN
-	1    7450 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 1150 7150 1600
 Wire Wire Line
@@ -307,17 +285,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 2250 7150 2250
 Connection ~ 7150 2250
-$Comp
-L capacitive-pad:capacitive-pad C6
-U 1 1 5C6F49E6
-P 7450 2700
-F 0 "C6" H 7677 2746 50  0000 L CNN
-F 1 "capacitive-pad" H 7677 2655 50  0000 L CNN
-F 2 "pads-cap-lib:capacitive-pad" H 7450 2700 50  0001 C CNN
-F 3 "" H 7450 2700 50  0001 C CNN
-	1    7450 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 2250 7150 2700
 Wire Wire Line
@@ -362,17 +329,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 3400 7150 3400
 Connection ~ 7150 3400
-$Comp
-L capacitive-pad:capacitive-pad C8
-U 1 1 5C6F4F8D
-P 7450 3850
-F 0 "C8" H 7677 3896 50  0000 L CNN
-F 1 "capacitive-pad" H 7677 3805 50  0000 L CNN
-F 2 "pads-cap-lib:capacitive-pad" H 7450 3850 50  0001 C CNN
-F 3 "" H 7450 3850 50  0001 C CNN
-	1    7450 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 3400 7150 3850
 Wire Wire Line
@@ -417,17 +373,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 4600 7200 4600
 Connection ~ 7200 4600
-$Comp
-L capacitive-pad:capacitive-pad C10
-U 1 1 5C6F575B
-P 7500 5050
-F 0 "C10" H 7727 5096 50  0000 L CNN
-F 1 "capacitive-pad" H 7727 5005 50  0000 L CNN
-F 2 "pads-cap-lib:capacitive-pad" H 7500 5050 50  0001 C CNN
-F 3 "" H 7500 5050 50  0001 C CNN
-	1    7500 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 4600 7200 5050
 Wire Wire Line
@@ -530,36 +475,13 @@ Wire Wire Line
 Wire Wire Line
 	6450 2250 7150 2250
 Wire Wire Line
-	5400 3450 6700 3450
-Wire Wire Line
-	6700 3450 6700 3300
-Wire Wire Line
 	6700 3300 7050 3300
-Wire Wire Line
-	6800 3400 6800 3550
-Wire Wire Line
-	6800 3550 5400 3550
-Wire Wire Line
-	6800 3400 7150 3400
-Wire Wire Line
-	5400 3650 6800 3650
-Wire Wire Line
-	6800 3650 6800 4500
 Wire Wire Line
 	6800 4500 7100 4500
 Wire Wire Line
-	6700 4600 6700 3750
-Wire Wire Line
-	6700 3750 5400 3750
-Wire Wire Line
 	6700 4600 7200 4600
-NoConn ~ 5400 1350
-NoConn ~ 5400 1450
-NoConn ~ 5400 1550
 NoConn ~ 5400 2250
 NoConn ~ 5400 2350
-NoConn ~ 5400 2450
-NoConn ~ 5400 2550
 $Comp
 L Device:C C11
 U 1 1 5C71DA1C
@@ -594,14 +516,6 @@ F 3 "" H 2150 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 3350 5400 3350
-Wire Wire Line
-	6450 2250 6450 3350
-Wire Wire Line
-	5400 3250 6350 3250
-Wire Wire Line
-	6350 3250 6350 2150
-Wire Wire Line
 	6050 3150 5400 3150
 Wire Wire Line
 	6050 1050 6050 3150
@@ -609,4 +523,155 @@ Wire Wire Line
 	5400 3050 6150 3050
 Wire Wire Line
 	6150 3050 6150 1150
+$Comp
+L capacitive-pad:capacitive-pad C4
+U 1 1 5C76C913
+P 7450 1600
+F 0 "C4" H 7677 1646 50  0000 L CNN
+F 1 "capacitive-pad" H 7677 1555 50  0000 L CNN
+F 2 "pads-cap-lib:capacitive-pad" H 7450 1600 50  0001 C CNN
+F 3 "" H 7450 1600 50  0001 C CNN
+	1    7450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L capacitive-pad:capacitive-pad C6
+U 1 1 5C76CB31
+P 7450 2700
+F 0 "C6" H 7677 2746 50  0000 L CNN
+F 1 "capacitive-pad" H 7677 2655 50  0000 L CNN
+F 2 "pads-cap-lib:capacitive-pad" H 7450 2700 50  0001 C CNN
+F 3 "" H 7450 2700 50  0001 C CNN
+	1    7450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L capacitive-pad:capacitive-pad C8
+U 1 1 5C76CBBD
+P 7450 3850
+F 0 "C8" H 7677 3896 50  0000 L CNN
+F 1 "capacitive-pad" H 7677 3805 50  0000 L CNN
+F 2 "pads-cap-lib:capacitive-pad" H 7450 3850 50  0001 C CNN
+F 3 "" H 7450 3850 50  0001 C CNN
+	1    7450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L capacitive-pad:capacitive-pad C10
+U 1 1 5C76CC31
+P 7500 5050
+F 0 "C10" H 7727 5096 50  0000 L CNN
+F 1 "capacitive-pad" H 7727 5005 50  0000 L CNN
+F 2 "pads-cap-lib:capacitive-pad" H 7500 5050 50  0001 C CNN
+F 3 "" H 7500 5050 50  0001 C CNN
+	1    7500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega168-20AU U1
+U 1 1 5C780DB7
+P 4800 2550
+F 0 "U1" H 4800 964 50  0000 C CNN
+F 1 "ATmega168-20AU" H 4800 873 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 4800 2550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2545-8-bit-AVR-Microcontroller-ATmega48-88-168_Datasheet.pdf" H 4800 2550 50  0001 C CNN
+	1    4800 2550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4200 1550
+NoConn ~ 4200 1650
+Wire Wire Line
+	5400 2450 6350 2450
+Wire Wire Line
+	6350 2450 6350 2150
+Wire Wire Line
+	6450 2250 6450 2550
+Wire Wire Line
+	6450 2550 5400 2550
+Wire Wire Line
+	5400 3350 6700 3350
+Wire Wire Line
+	6700 3350 6700 3300
+Wire Wire Line
+	5400 3400 5400 3450
+Wire Wire Line
+	5400 3400 7150 3400
+$Comp
+L Device:R R6
+U 1 1 5C79139E
+P 7200 5600
+F 0 "R6" H 7270 5646 50  0000 L CNN
+F 1 "1M" H 7270 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7130 5600 50  0001 C CNN
+F 3 "~" H 7200 5600 50  0001 C CNN
+	1    7200 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5C7913A5
+P 7500 5750
+F 0 "C12" V 7752 5750 50  0000 C CNN
+F 1 "100pF" V 7661 5750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7538 5600 50  0001 C CNN
+F 3 "~" H 7500 5750 50  0001 C CNN
+	1    7500 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5C7913AC
+P 7750 5750
+F 0 "#PWR016" H 7750 5500 50  0001 C CNN
+F 1 "GND" H 7755 5577 50  0000 C CNN
+F 2 "" H 7750 5750 50  0001 C CNN
+F 3 "" H 7750 5750 50  0001 C CNN
+	1    7750 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5750 7650 5750
+Wire Wire Line
+	7350 5750 7200 5750
+Connection ~ 7200 5750
+Wire Wire Line
+	7200 5750 7200 6200
+Wire Wire Line
+	7200 5450 7100 5450
+Wire Wire Line
+	7100 5450 7100 5650
+$Comp
+L capacitive-pad:capacitive-pad C13
+U 1 1 5C7913BA
+P 7500 6200
+F 0 "C13" H 7727 6246 50  0000 L CNN
+F 1 "capacitive-pad" H 7727 6155 50  0000 L CNN
+F 2 "pads-cap-lib:capacitive-pad-small" H 7500 6200 50  0001 C CNN
+F 3 "" H 7500 6200 50  0001 C CNN
+	1    7500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5650 6250 1350
+Wire Wire Line
+	6250 1350 5400 1350
+Wire Wire Line
+	6250 5650 7100 5650
+Wire Wire Line
+	5400 3750 6150 3750
+Wire Wire Line
+	6150 3750 6150 5750
+Wire Wire Line
+	6150 5750 7200 5750
+NoConn ~ 5400 3250
+NoConn ~ 5400 1450
+NoConn ~ 5400 1550
+Wire Wire Line
+	5400 3550 6700 3550
+Wire Wire Line
+	6700 3550 6700 4600
+Wire Wire Line
+	6800 3650 5400 3650
+Wire Wire Line
+	6800 3650 6800 4500
 $EndSCHEMATC
