@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 8)
-    (tracks 243)
+    (tracks 247)
     (zones 0)
     (modules 19)
     (nets 31)
@@ -12,8 +12,8 @@
   (page A4)
   (title_block
     (title Capacitive-touch-buttons)
-    (date 2019-02-28)
-    (rev 2.0.0)
+    (date 2019-03-09)
+    (rev 3.0.0)
     (company "Hackerspace NTNU")
   )
 
@@ -897,6 +897,9 @@
   (gr_arc (start 177.5 32.5) (end 180 32.5) (angle -90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 82.5 32.5) (end 82.5 30) (angle -90) (layer Edge.Cuts) (width 0.15))
 
+  (via (at 85 35) (size 7) (drill 3.5) (layers F.Cu B.Cu) (net 0) (tstamp 5C9061B6))
+  (via (at 85 125) (size 7) (drill 3.5) (layers F.Cu B.Cu) (net 0) (tstamp 5C9061B6))
+  (via (at 175 125) (size 7) (drill 3.5) (layers F.Cu B.Cu) (net 0) (tstamp 5C9061B6))
   (segment (start 146.75 51.65) (end 146.75 53.7625) (width 0.254) (layer B.Cu) (net 1))
   (segment (start 146.8 51.6) (end 146.75 51.65) (width 0.254) (layer B.Cu) (net 1))
   (segment (start 146.7 51.5) (end 146.8 51.6) (width 0.254) (layer B.Cu) (net 1))
@@ -1022,6 +1025,7 @@
   (via (at 120.8 89.2) (size 1) (drill 0.5) (layers F.Cu B.Cu) (net 9))
   (segment (start 118.6 83.2) (end 118.6 87) (width 0.254) (layer F.Cu) (net 9) (tstamp 5C905F32))
   (via (at 118.6 83.2) (size 1) (drill 0.5) (layers F.Cu B.Cu) (net 9))
+  (via (at 175 35) (size 7) (drill 3.5) (layers F.Cu B.Cu) (net 9))
   (via (at 119.8 75) (size 1) (drill 0.5) (layers F.Cu B.Cu) (net 10))
   (segment (start 119.8 75) (end 123.6 71.2) (width 0.254) (layer F.Cu) (net 10))
   (segment (start 123.6 71.2) (end 128.4 71.2) (width 0.254) (layer F.Cu) (net 10))
