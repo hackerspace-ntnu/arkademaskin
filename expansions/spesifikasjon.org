@@ -89,6 +89,7 @@ Pin Toppen      Pin Bunnen
 - Rør(?)sikringer for 24V, 12V og 5V, verdi for sikringer bestemmes utifra målt resistans i kontakt.
 - Bare kontaktene som skal brukes av det eksterne kortet trenger å være implementert.
 - Prototypekort med alle kontakter som kan brukes til å teste
+- Kontakt for GND på maskinsiden stikker lengere ut for at denne skal skape kontakt først
 
 - Total bredde :: 51,36cm
 
