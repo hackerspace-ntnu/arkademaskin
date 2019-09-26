@@ -89,7 +89,7 @@ Pin Toppen      Pin Bunnen
 - Rør(?)sikringer for 24V, 12V og 5V, verdi for sikringer bestemmes utifra målt resistans i kontakt.
 - Bare kontaktene som skal brukes av det eksterne kortet trenger å være implementert.
 - Prototypekort med alle kontakter som kan brukes til å teste
-- Kontakt for GND på maskinsiden stikker lengere ut for at denne skal skape kontakt først
+- Kontakt for GND på maskinsiden stikker lengere ut for at denne skal skape kontakt først, etter det er strøm kontaktene, og så resten av kontaktene
 
 - Total bredde :: 51,36cm
 
@@ -128,7 +128,9 @@ Pin Toppen      Pin Bunnen
 - Bluetooth-muligheter
 
 ** Gjennkjenning av hardware
-- 10 bitt malt i sort: 0 eller hvit: 1 fremst på toppen av boksen, 5cm dype og jevnt fordelt.
+- En 24AA025E48 chip med 2Kb minne som holder info om hardware
+- Går over i2c
+- https://www.microchip.com/wwwproducts/en/24AA025E48
 
 ** Lengde av dataledere
 - https://electronics.stackexchange.com/questions/52851/usb-differential-pair-length
