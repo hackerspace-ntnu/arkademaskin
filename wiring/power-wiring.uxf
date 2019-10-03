@@ -328,9 +328,9 @@ Speaker</panel_attributes>
       <w>140</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>Molex connector max current:
-5V: 11A
-12V: 11A
+    <panel_attributes>Molex connector max current (recommended):
+5V: 11A (5A)
+12V: 11A (5A)
 bg=white</panel_attributes>
     <additional_attributes/>
   </element>
