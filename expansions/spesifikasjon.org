@@ -5,33 +5,52 @@
 *** Bygging
 - En 2t4 på høykant på hver side
 - Dekket med 6mm kryssfiner over hele, trekk dekket helt til endes
-- 40cm bred 6mm tykk kryssfinerplane i midten for kontakter, 5cm inn fra tuppen må lages
+- 40cm bred plate midten for kontakter, bestående av 3 stykk 4mm kryssfinerplate limt sammen , 5cm inn fra tuppen må lages
 - Forsterk med 2t4 på høykant på tvers kort bak disse 5cm
 - Kontaktene er på hver side av platen, 20 på hver side. De har 0.5cm margin til kantene, er 1cm brede og har 1cm mellom hverandre
-- På oversiden fra høyre sett fra spilleren av arkaden slås de første 9 pinnene sammen til fra hjørnet:
-  + 3cm 24V
-  + 3cm 12V
-  + 3cm 5v
-  + 5cm GND
+- Kontaktene er laget av koppertape, 10mm bredde for alle borsett fra GND som har 30mm bredde
+- Kontaktene er festet i bakkant til en bolt, denne bolten går gjennom koppertapen og er festet med en mutter, det skal være en skive og ringkabelsko i mellom. 
+- Se "spesifikasjon.png" for hvordan dette kan gjøres
+- Bolter kan være limt for å gjøre det enklere
+- Koppertape for 24V, 12V, 5V og GND går rundt kanten mellom over og undersiden, se "spesifikasjon.png"
 - På toppen av boksen innerst over hele bredden males 5cm dyp 10 sort/hvit bitt jevnt fordelt, altså ca 5cm bred.
+- Rør(?)sikringer for 24V, 12V og 5V, verdi for sikringer bestemmes utifra målt resistans i kontakt.
+- Bare kontaktene som skal brukes av det eksterne kortet trenger å være implementert.
+- Prototypekort med alle kontakter som kan brukes til å teste
+- Kontakt for GND på maskinsiden stikker lengere ut for at denne skal skape kontakt først, etter det er strøm kontaktene, og så resten av kontaktene
 
 - Total bredde :: 51,36cm
 
 
+
 ** Definisjon av pinner
-- Toppen fra høyre sett ovenfra fra maskinen
-  + 2 sammenslått 24V
-  + 2 sammenslått 12V
-  + 2 sammenslått 5V
-  + 3 sammenslått GND
-  + Seriell RX
-  + Seriell TX
-  + USB data+
-  + USB data-
-  + i2c SDA
-  + i2c SCL
-  + 5 unused
-- Bunnen: 20 GPIO
+
+Pin 1 og 40 er på høyre side sett fra baksiden
+
+|Toppen |  | Bunnen  | |
+| Pin| Funksjon|      Pin| Funksjon|
+|---|--------|---|-------|
+| 1 | 24V        | 40 | 24V
+| 2 | 12V        | 39 | 12V
+| 3 | 5V         | 38 | 5V
+| 4 | GND        | 37 | GND
+| 5 | GND        | 36 | GND
+| 6 | Serial RX  | 35 | Serial TX
+| 7 | USB data+  | 34 | USB data-
+| 8 | i2c SDA    | 33 | i2c SCL
+| 9 | RESERVED   | 32 | RESERVED
+|10 | RESERVED   | 31 | RESERVED
+|11 | GPIO  1    | 30 | GPIO 20
+|12 | GPIO  2    | 29 | GPIO 19
+|13 | GPIO  3    | 28 | GPIO 18
+|14 | GPIO  4    | 27 | GPIO 17
+|15 | GPIO  5    | 26 | GPIO 16
+|17 | GPIO  7    | 24 | GPIO 14
+|16 | GPIO  6    | 25 | GPIO 15
+|18 | GPIO  8    | 23 | GPIO 13
+|19 | GPIO  9    | 22 | GPIO 12
+|20 | GPIO 10    | 21 | GPIO 11
+
 
 ** All komunikasjon, kablet og trådløst
 - Pinner som definert over
@@ -40,3 +59,17 @@
 
 ** Gjennkjenning av hardware
 - 10 bitt malt i sort: 0 eller hvit: 1 fremst på toppen av boksen, 5cm dype og jevnt fordelt.
+
+** Lengde av dataledere
+- https://electronics.stackexchange.com/questions/52851/usb-differential-pair-length
+
+
+** Boltinfo
+- Bolt type: DIN 933
+- Diameter: M4
+- Gjennomgående bolt har lengde 35mm
+- Bolt som går gjennom halve flaten er 25mm
+
+** Skive
+
+** Mutter
