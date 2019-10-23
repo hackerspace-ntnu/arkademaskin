@@ -53,7 +53,7 @@ U 1 1 5C0CA658
 P 1950 2150
 F 0 "J1" H 2056 2528 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 2056 2437 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical" H 1950 2150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical_SMD_Pin1Left" H 1950 2150 50  0001 C CNN
 F 3 "~" H 1950 2150 50  0001 C CNN
 	1    1950 2150
 	1    0    0    -1  
@@ -70,32 +70,6 @@ F 3 "~" H 7150 1000 50  0001 C CNN
 	1    7150 1000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C3
-U 1 1 5C6F5DEA
-P 7450 1150
-F 0 "C3" V 7702 1150 50  0000 C CNN
-F 1 "100pF" V 7611 1150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7488 1000 50  0001 C CNN
-F 3 "~" H 7450 1150 50  0001 C CNN
-	1    7450 1150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 5C6F5DF1
-P 7700 1150
-F 0 "#PWR010" H 7700 900 50  0001 C CNN
-F 1 "GND" H 7705 977 50  0000 C CNN
-F 2 "" H 7700 1150 50  0001 C CNN
-F 3 "" H 7700 1150 50  0001 C CNN
-	1    7700 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 1150 7600 1150
-Wire Wire Line
-	7300 1150 7150 1150
 Connection ~ 7150 1150
 NoConn ~ 4200 1350
 Wire Wire Line
@@ -150,7 +124,7 @@ U 1 1 5C70C979
 P 2750 2050
 F 0 "Q1" H 2955 2096 50  0000 L CNN
 F 1 "BS170" H 2955 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 2950 1975 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2950 1975 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 2750 2050 50  0001 L CNN
 	1    2750 2050
 	1    0    0    -1  
@@ -258,32 +232,6 @@ F 3 "~" H 7150 2100 50  0001 C CNN
 	1    7150 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C5
-U 1 1 5C6F49D6
-P 7450 2250
-F 0 "C5" V 7702 2250 50  0000 C CNN
-F 1 "100pF" V 7611 2250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7488 2100 50  0001 C CNN
-F 3 "~" H 7450 2250 50  0001 C CNN
-	1    7450 2250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5C6F49DD
-P 7700 2250
-F 0 "#PWR011" H 7700 2000 50  0001 C CNN
-F 1 "GND" H 7705 2077 50  0000 C CNN
-F 2 "" H 7700 2250 50  0001 C CNN
-F 3 "" H 7700 2250 50  0001 C CNN
-	1    7700 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 2250 7600 2250
-Wire Wire Line
-	7300 2250 7150 2250
 Connection ~ 7150 2250
 Wire Wire Line
 	7150 2250 7150 2700
@@ -302,33 +250,6 @@ F 3 "~" H 7150 3250 50  0001 C CNN
 	1    7150 3250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C7
-U 1 1 5C6F4F7D
-P 7450 3400
-F 0 "C7" V 7702 3400 50  0000 C CNN
-F 1 "100pF" V 7611 3400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7488 3250 50  0001 C CNN
-F 3 "~" H 7450 3400 50  0001 C CNN
-	1    7450 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5C6F4F84
-P 7700 3400
-F 0 "#PWR012" H 7700 3150 50  0001 C CNN
-F 1 "GND" H 7705 3227 50  0000 C CNN
-F 2 "" H 7700 3400 50  0001 C CNN
-F 3 "" H 7700 3400 50  0001 C CNN
-	1    7700 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 3400 7600 3400
-Wire Wire Line
-	7300 3400 7150 3400
-Connection ~ 7150 3400
 Wire Wire Line
 	7150 3400 7150 3500
 Wire Wire Line
@@ -346,32 +267,6 @@ F 3 "~" H 7200 4450 50  0001 C CNN
 	1    7200 4450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C9
-U 1 1 5C6F574B
-P 7500 4600
-F 0 "C9" V 7752 4600 50  0000 C CNN
-F 1 "100pF" V 7661 4600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7538 4450 50  0001 C CNN
-F 3 "~" H 7500 4600 50  0001 C CNN
-	1    7500 4600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5C6F5752
-P 7750 4600
-F 0 "#PWR013" H 7750 4350 50  0001 C CNN
-F 1 "GND" H 7755 4427 50  0000 C CNN
-F 2 "" H 7750 4600 50  0001 C CNN
-F 3 "" H 7750 4600 50  0001 C CNN
-	1    7750 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 4600 7650 4600
-Wire Wire Line
-	7350 4600 7200 4600
 Connection ~ 7200 4600
 Wire Wire Line
 	7200 4600 7200 5050
@@ -385,7 +280,7 @@ U 1 1 5C6F91D1
 P 2400 4550
 F 0 "J2" H 2120 4646 50  0000 R CNN
 F 1 "AVR-ISP-6" H 2120 4555 50  0000 R CNN
-F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" V 2150 4600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" V 2150 4600 50  0001 C CNN
 F 3 " ~" H 1125 4000 50  0001 C CNN
 	1    2400 4550
 	1    0    0    -1  
@@ -599,32 +494,6 @@ F 3 "~" H 7200 5600 50  0001 C CNN
 	1    7200 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C12
-U 1 1 5C7913A5
-P 7500 5750
-F 0 "C12" V 7752 5750 50  0000 C CNN
-F 1 "100pF" V 7661 5750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7538 5600 50  0001 C CNN
-F 3 "~" H 7500 5750 50  0001 C CNN
-	1    7500 5750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR016
-U 1 1 5C7913AC
-P 7750 5750
-F 0 "#PWR016" H 7750 5500 50  0001 C CNN
-F 1 "GND" H 7755 5577 50  0000 C CNN
-F 2 "" H 7750 5750 50  0001 C CNN
-F 3 "" H 7750 5750 50  0001 C CNN
-	1    7750 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 5750 7650 5750
-Wire Wire Line
-	7350 5750 7200 5750
 Connection ~ 7200 5750
 Wire Wire Line
 	7200 5750 7200 6200
