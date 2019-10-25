@@ -1,8 +1,9 @@
-xrandr --output Virtual1 --mode 1:1
+SCREENNAME=$(xrandr | grep -e " connected" | sed 's/ .*//')
+xrandr --output $SCREENNAME --mode 1:1
 {
-./flashplayer Mujaffa\,\ spill\ det\ gratis\ på\ nett\,\ mobil\ og\ nettbrett.swf
-xrandr --output Virtual1 --mode 2556x1287
+./flashplayer mujaffa_spillet.swf
+xrandr -s 0
 } &
-sleep 0.8
-xdotool search --name "Adobe Flash Player" set_window --name "Mujaffa"
+sleep 0.6
+xdotool search --name "Adobe Flash Player" set_window --name "Mujaffa Spillet"
 xdotool key ctrl+f
