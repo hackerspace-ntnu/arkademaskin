@@ -1,0 +1,6 @@
+[submodule "kodi/plugin.program.AEL"]
+	path = kodi/plugin.program.AEL
+	url = https://github.com/hackerspace-ntnu/plugin.program.AEL
+[submodule "kodi/skin.lyrebird"]
+	path = kodi/skin.lyrebird
+	url = git@github.com:hackerspace-ntnu/skin.lyrebird.git
