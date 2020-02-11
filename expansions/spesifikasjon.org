@@ -18,6 +18,7 @@
 - Bare kontaktene som skal brukes av det eksterne kortet trenger å være implementert.
 - Prototypekort med alle kontakter som kan brukes til å teste
 - Kontakt for GND på maskinsiden stikker lengere ut for at denne skal skape kontakt først, etter det er strøm kontaktene, og så resten av kontaktene
+- DETECTION pin for å fastsette hvilken expansion som er plugget inn. En unik spenning mellom 0V og 5V per expansion. Måles med analog pin på Arduino. Spenning settes med en voltage divider mellom 5V og GND.
 
 - Total bredde :: 51,36cm
 
@@ -38,7 +39,7 @@ Pin 1 og 40 er på høyre side sett fra baksiden
 |      6 | Serial RX |     35 | Serial TX |
 |      7 | USB data+ |     34 | USB data- |
 |      8 | i2c SDA   |     33 | i2c SCL   |
-|      9 | RESERVED  |     32 | RESERVED  |
+|      9 | DETECTION |     32 | RESERVED  |
 |     10 | RESERVED  |     31 | RESERVED  |
 |     11 | GPIO  1   |     30 | GPIO 20   |
 |     12 | GPIO  2   |     29 | GPIO 19   |
