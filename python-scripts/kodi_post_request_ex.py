@@ -21,7 +21,7 @@ data_open_plugin_fav = {
   "method": "GUI.ActivateWindow",
   "id": 1,
   "params": {
-    "window": "games",
+    "window": "favourites", #you can change this with games videos etc.
     "parameters": [
      "plugin://plugin.program.advanced.emulator.launcher/?catID=vcategory_collections&com=SHOW_COLLECTION_ROMS&launID=19f283de98723e813d15a268f4fa2441"
     ]
