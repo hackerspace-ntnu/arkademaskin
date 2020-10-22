@@ -6,9 +6,13 @@ API_ENDPOINT = "http://localhost:8080/jsonrpc"
 headers = {
 "Content-Type": "application/json"
 }
-#Subfolder paths:
+#Subfolder path:
 piano = "//plugin.program.advanced.emulator.launcher/?com=SHOW_LAUNCHERS&catID=5944f8d8e0a2e8554f845e0755b7136f"
 flash = "//plugin.program.advanced.emulator.launcher/?com=SHOW_LAUNCHERS&catID=d45fb2e7ebe6d09d2cb03af60e24cbd8"
+
+
+# UTILITY
+
 
 def rpcPost(jsonInput):
     r = requests.post(url = API_ENDPOINT, headers=headers, data = json.dumps(jsonInput))
@@ -28,6 +32,11 @@ def notification(title, message):
     r = rpcPost(data_notification)
     print(r.json())
 
+def back():
+    data_back = {"jsonrpc": "2.0", "method":"Input.back", "id":"back"}
+    r = rpcPost(data_back)
+    print(r.json())
+
 
 #Get directories from advanced emulator launcher
 def getDirectories():
@@ -41,6 +50,10 @@ def getDirectories():
     }
     r = rpcPost(data_dir)
     print(r.json())
+
+
+# NAVIGATION
+
 
 #Go to main menu
 def mainmenu():
@@ -58,20 +71,21 @@ def mainmenu():
 
 #Opens a subdirectory to the Advanced emulator launcher
 def open(path):
+    back()
     data_open_subdir = {
          "jsonrpc": "2.0",
          "method": "Addons.ExecuteAddon",
          "id": "open_subdir",
          "params": {
              "addonid": "plugin.program.advanced.emulator.launcher",
-             "params": paths
+             "params": path
          }
     }
     r = rpcPost(data_open_subdir)
     print(r.json())
 
     
-#def open(folder):
+#def open(path):
     #open plugin and favorite shitt
     #data_open_plugin_fav = {
       #"jsonrpc": "2.0",
@@ -79,11 +93,14 @@ def open(path):
       #"id": 3,
       #"params": {
       #  "window": "favourites", #you can change this with games videos etc.
-      #  "parameters": [folder]   
+      #  "parameters": [path]   
       #  }
    # }
     #r = rpcPost(data_open_plugin_fav)
    # print(r.json())
+
+
+# APPLICATION
 
 
 #quit application
@@ -99,6 +116,10 @@ def reboot():
     r = rpcPost(data_reboot)
     print(r.json())
 
+
+# DRIVER CODE
+
+
 while(True):
     val = input("Enter your value: ")   
     i = int(val)
@@ -106,9 +127,9 @@ while(True):
     if(i==1):
         notification('Hello','World')
     elif(i==2):
-        open(piano)
+        open(piano) #firefox
     elif(i==3):
-        open(flash)
+        open(flash) #pluma
     elif(i==4):
         exit()
         break
