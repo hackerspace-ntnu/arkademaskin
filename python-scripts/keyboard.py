@@ -2,23 +2,20 @@ from pynput import keyboard
 import time
 code = ""
 current_code = ""
+import kodi_handler as kodi
 
 def on_press(key):
     global code
     global current_code
-    if(key == keyboard.Key.f13):
+    if(key == keyboard.Key.f12):
         code = code + "1"
-        print(code)
-        print(current_code)
-    if(key == keyboard.Key.f14):
+    if(key == keyboard.Key.f11):
         code = code +  "0"
-        print(code)
-        print(current_code)
     if len(code) == 8:
         current_code = code
         code = ""
-        print(code)
         print(current_code)
+        print(kodi.notification('Hello','World'))
         #call method for kodi
     
 
@@ -44,4 +41,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    on_press(keyboard.Key.f13)
+    on_press(keyboard.Key.f12)

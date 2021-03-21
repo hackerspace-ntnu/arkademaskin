@@ -33,13 +33,13 @@ def notification(title, message):
         }
     }
     r = rpcPost(data_notification)
-    print(r.json())
+    return r.json()
 
 # Go to previous window
 def back():
     data_back = {"jsonrpc": "2.0", "method":"Input.back", "id":"back"}
     r = rpcPost(data_back)
-    print(r.json())
+    return r.json()
 
 
 #Get directories from advanced emulator launcher
@@ -53,7 +53,7 @@ def getDirectories():
         }
     }
     r = rpcPost(data_dir)
-    print(r.json())
+    return r.json()
 
 
 # NAVIGATION
@@ -70,7 +70,7 @@ def mainmenu():
         }
     }
     r = rpcPost(data_mainmenu)
-    print(r.json())
+    return r.json()
 
 
 #Opens a subdirectory to the Advanced emulator launcher
@@ -86,7 +86,7 @@ def open(path):
          }
     }
     r = rpcPost(data_open_subdir)
-    print(r.json())
+    return r.json()
 
     
 #def open(path):
@@ -111,33 +111,33 @@ def open(path):
 def exit():
     data_close_kodi = {"jsonrpc":"2.0","method":"Application.Quit","id":"exit"}
     r = rpcPost(data_close_kodi)
-    print(r.json())
+    return r.json()
 
 
 def reboot():
     #reboots system that runs kodi
     data_reboot = {"jsonrpc":"2.0","method":"System.Reboot","id":"reboot"}
     r = rpcPost(data_reboot)
-    print(r.json())
+    return r.json()
 
 
 # DRIVER CODE
 
 
-while(True):
-    val = input("Enter your value: ")   
-    i = int(val)
-    print(i)
-    if(i==1):
-        notification('Hello','World')
-    elif(i==2):
-        open(piano) #firefox
-    elif(i==3):
-        open(flash) #pluma
-    elif(i==4):
-        getDirectories()
-    elif(i==5):
-        exit()
-        break
+#while(True):
+ #   val = input("Enter your value: ")   
+  #  i = int(val)
+   # print(i)
+    #if(i==1):
+     #   notification('Hello','World')
+    #elif(i==2):
+    #    open(piano) #firefox
+    #elif(i==3):
+     #   open(flash) #pluma
+    #elif(i==4):
+     #   getDirectories()
+    #elif(i==5):
+     #   exit()
+      #  break
 
 
