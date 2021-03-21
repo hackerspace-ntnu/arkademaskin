@@ -6,18 +6,21 @@ API_ENDPOINT = "http://localhost:8080/jsonrpc"
 headers = {
 "Content-Type": "application/json"
 }
-#Subfolder path:
-piano = "//plugin.program.advanced.emulator.launcher/?com=SHOW_LAUNCHERS&catID=5944f8d8e0a2e8554f845e0755b7136f"
-flash = "//plugin.program.advanced.emulator.launcher/?com=SHOW_LAUNCHERS&catID=d45fb2e7ebe6d09d2cb03af60e24cbd8"
 
+#Subfolder path:
+ael = "//plugin.program.advanced.emulator.launcher/?com=SHOW_LAUNCHERS&catID="
+piano = "5944f8d8e0a2e8554f845e0755b7136f"
+flash = "d45fb2e7ebe6d09d2cb03af60e24cbd8"
+#full path is //plugin.program.advanced.emulator.launcher/?com=SHOW_LAUNCHERS&catID=5944f8d8e0a2e8554f845e0755b7136f
 
 # UTILITY
 
-
+#General post request wrapper
 def rpcPost(jsonInput):
     r = requests.post(url = API_ENDPOINT, headers=headers, data = json.dumps(jsonInput))
     return r
 
+#MOTD method
 def notification(title, message):
     # Pop up message
     data_notification = {
@@ -32,6 +35,7 @@ def notification(title, message):
     r = rpcPost(data_notification)
     print(r.json())
 
+# Go to previous window
 def back():
     data_back = {"jsonrpc": "2.0", "method":"Input.back", "id":"back"}
     r = rpcPost(data_back)
@@ -78,7 +82,7 @@ def open(path):
          "id": "open_subdir",
          "params": {
              "addonid": "plugin.program.advanced.emulator.launcher",
-             "params": path
+             "params": ael+path
          }
     }
     r = rpcPost(data_open_subdir)
@@ -131,6 +135,8 @@ while(True):
     elif(i==3):
         open(flash) #pluma
     elif(i==4):
+        getDirectories()
+    elif(i==5):
         exit()
         break
 
