@@ -26,31 +26,31 @@
 
 ** Definisjon av pinner
 
-Pin 1 og 40 er på høyre side sett fra baksiden
+Pin 1 og 2 er på høyre side sett fra baksiden
 
 | Toppen |           | Bunnen |           |
 |    Pin | Funksjon  |    Pin | Funksjon  |
 |--------+-----------+--------+-----------|
-|      1 | 24V       |     40 | 24V       |
-|      2 | 12V       |     39 | 12V       |
-|      3 | 5V        |     38 | 5V        |
-|      4 | GND       |     37 | GND       |
-|      5 | GND       |     36 | GND       |
-|      6 | Serial RX |     35 | Serial TX |
-|      7 | USB data+ |     34 | USB data- |
-|      8 | i2c SDA   |     33 | i2c SCL   |
-|      9 | DETECTION |     32 | RESERVED  |
-|     10 | RESERVED  |     31 | RESERVED  |
-|     11 | GPIO  1   |     30 | GPIO 20   |
-|     12 | GPIO  2   |     29 | GPIO 19   |
-|     13 | GPIO  3   |     28 | GPIO 18   |
-|     14 | GPIO  4   |     27 | GPIO 17   |
-|     15 | GPIO  5   |     26 | GPIO 16   |
-|     17 | GPIO  7   |     24 | GPIO 14   |
-|     16 | GPIO  6   |     25 | GPIO 15   |
-|     18 | GPIO  8   |     23 | GPIO 13   |
-|     19 | GPIO  9   |     22 | GPIO 12   |
-|     20 | GPIO 10   |     21 | GPIO 11   |
+|      1 | 24V       |      2 | 24V       |
+|      3 | 12V       |      4 | 12V       |
+|      5 | 5V        |      6 | 5V        |
+|      7 | GND       |      8 | GND       |
+|      9 | GND       |     10 | GND       |
+|     11 | Serial RX |     12 | Serial TX |
+|     13 | USB data+ |     14 | USB data- |
+|     15 | i2c SDA   |     16 | i2c SCL   |
+|     17 | DETECTION |     18 | RESERVED  |
+|     19 | RESERVED  |     20 | RESERVED  |
+|     21 | GPIO  1   |     22 | GPIO 20   |
+|     23 | GPIO  2   |     24 | GPIO 19   |
+|     25 | GPIO  3   |     26 | GPIO 18   |
+|     27 | GPIO  4   |     28 | GPIO 17   |
+|     29 | GPIO  5   |     30 | GPIO 16   |
+|     31 | GPIO  7   |     32 | GPIO 14   |
+|     33 | GPIO  6   |     34 | GPIO 15   |
+|     35 | GPIO  8   |     36 | GPIO 13   |
+|     37 | GPIO  9   |     38 | GPIO 12   |
+|     39 | GPIO 10   |     40 | GPIO 11   |
 
 
 ** All komunikasjon, kablet og trådløst
